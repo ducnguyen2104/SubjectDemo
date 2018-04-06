@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ducnguyenvan.subjectdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Item displayed here"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Async Subject"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignBaseline="@+id/btnBh"
+        android:layout_alignBottom="@+id/btnBh"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnBh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Behavior Subject"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="28dp"
+        android:layout_above="@+id/btnRep"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnPub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public Subject"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnAs"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/btnRep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replay Subject"
+        android:layout_alignBaseline="@+id/btnPub"
+        android:layout_alignBottom="@+id/btnPub"
+        android:layout_alignStart="@+id/btnBh"
+        android:layout_alignEnd="@+id/btnBh" />
+
+</RelativeLayout>
